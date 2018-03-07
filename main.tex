@@ -11,8 +11,10 @@ listof=numbered,													%Listingsverzeichnis
 bibliography=totocnumbered,											%Literaturverzeichnis
 ]
 {scrbook}															%Dokumenttyp
-\usepackage[ngerman]{babel}											%Deutsch
-\usepackage[bottom=1in,inner=1in,outer=20mm,top=20mm]{geometry}		%Ganze Seite
+
+\usepackage[bottom=1in,inner=1in,outer=20mm,top=20mm]{geometry}		%Ganze Seite verwenden
+
+% Kopf und Fußzeile
 \usepackage{emptypage}												%Leere Seiten ohne Kopf und Fußzeile
 \usepackage[headsepline]{scrlayer-scrpage}							%Kopf und Fußzeile
 \pagestyle{scrheadings}												%Nummerierung in der Kopfzeile
@@ -21,12 +23,15 @@ bibliography=totocnumbered,											%Literaturverzeichnis
 \ohead[\pagemark]{\pagemark}										%Seitennummerierung
 \lohead{}															%Name auf der ungeraden Seite innen
 \renewcommand*{\chapterpagestyle}{scrheadings}						%Kopf und Fußzeile auf Seiten mit Überschriften anders
+
+%Dokumenteinstellungen und Paketimporte
+\usepackage[ngerman]{babel}											%Deutsch
 \usepackage{graphicx}												%Bilder
-\usepackage{caption}												%Tabellen Listings und Figuren mit beschriftung im Verzeichnissen
+\usepackage{caption}												%Tabellen Listings und Figuren mit Beschriftung in Verzeichnissen
 \usepackage[T1]{fontenc}											%Outputencoding
 \usepackage{float}													%Plazierung von Floats (Bilder Tabellen)
-\usepackage[utf8]{inputenc}											%UTF8
-\usepackage{wrapfig}												%Textumfluss von Bildern, die nicht die ganze Seite Brauchen
+\usepackage[utf8x]{inputenc}										%UTF8 + Sonderzeichen
+\usepackage{wrapfig}												%Textumfluss von Bildern, die nicht die ganze Seite brauchen
 \usepackage{setspace}												%Zeilenabstand
 \usepackage{listings}												%Listings (=Code)
 \usepackage{times}													%Schriftart Times Roman
@@ -37,21 +42,25 @@ bibliography=totocnumbered,											%Literaturverzeichnis
 \usepackage{appendix}												%Anhang Titelseite
 \usepackage{tabularx}												%Bessere Tabellen
 \usepackage{jurabib}												%Zitierung
-\usepackage[bookmarks]{hyperref}									%Automatische Lesezeichen
+\usepackage[printonlyused,withpage]{acronym}						%Für die Verwendung von Akronymen + Verzeichnis - printonlyused: Abkürzung nur im Verzeichnis wenn auch benutzt; withpage: Seite der 1. Verwendung im Verzeichnis anzeigen
 
 \setlength{\parindent}{0em}											%Einrücken
+\setcounter{tocdepth}{5}											%Tiefe der Überschriften
+\setcounter{secnumdepth}{5}											%Nummerierungstiefe der Überschriften
 
-\subject{\includegraphics[scale=0.7]{logoMecha.png}}
+\usepackage[bookmarks]{hyperref}									%Automatische Lesezeichen
+
+\subject{\includegraphics[scale=0.7]{fig/logoMecha}}
 \title{Diplomarbeitvorlage}
-\subtitle{HTBLA Kaindorf an der Sulm\\Grazer Straße 202, A-8430 Kaindorf an der Sulm\\Ausbildungsschwerpunkt Mechatronik und Automatisierungstechnik}
+\subtitle{HTBLA Kaindorf an der Sulm\\
+Grazer Straße 202, A-8430 Kaindorf an der Sulm\\
+Ausbildungsschwerpunkt Mechatronik und Automatisierungstechnik}
 \author{Florian Greistorfer \and Marian Korošec}
 \date{Abgabedatum: 7.3.2018}
 \publishers{Betreut von:\\Dipl.-Ing. Manfred Steiner}
 \begin{document}													%Dokumentbeginn
 \onehalfspace														%Zeilenabstand
 \maketitle															%Titelseite
-\setcounter{tocdepth}{5}											%Tiefe der Überschriften
-\setcounter{secnumdepth}{5}											%Nummerierungstiefe der Überschriften
 \input{listings}
 \input{opening}														%Datei importieren
 \tableofcontents													%Inhaltsverzeichnis

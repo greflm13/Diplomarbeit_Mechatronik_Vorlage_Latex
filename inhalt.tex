@@ -14,7 +14,7 @@
 \begin{wrapfigure}{r}{0.6\textwidth}
 \vspace{-30pt}
   \begin{center}
-    \includegraphics[width=0.55\textwidth]{logoMecha}
+    \includegraphics[width=0.55\textwidth]{fig/logoMecha}
   \end{center}
   \caption{Bild mit Textumfluss}
   \label{Bild mit Textumfluss}
@@ -24,14 +24,14 @@
 Hier muss Text stehen, sonst wird von unten alles verschoben. Sollte nicht genug Text vorhanden sein muss mit dem \textbackslash{}vspace\{\} Befehl das Format angepasst werden. Mit dem \textbackslash{}vspace\{\} Kommando muss solange herumgspielt werden, bis das Format passt. Sollte nicht genug Platz gebraucht werden, wird der \textbackslash{}wrapfigure\{\} Befehl auch weiter unten alles auf die halbe Seite verringern. Verweisen auf Sections, Bilder, etc. kann mam mit\ref{Bild mit Textumfluss} und \ref{Bild über ganze Seitenbreite} kann man mit dem Befehl \textbackslash{}ref\{\}. Hier ein Verweis auf die Tabellensection \ref{sec:tabelle}.
 
 \begin{figure}[H]
-      \includegraphics[width=1\textwidth]{logoMecha}
+      \includegraphics[width=1\textwidth]{fig/logoMecha}
       \caption{Bild über ganze Seitenbreite}
       \label{Bild über ganze Seitenbreite}
 \end{figure}
 \newpage
 
 \paragraph{Code}\mbox{}\\
-Hier muss Text stehen, sonst wird der Paragraph nicht angezeigt.
+Hier muss Text stehen, sonst wird der Paragraph nicht angezeigt.\footnote{Fußnote mit URL.\\ \url{https://www.htl-mechatronik.at/}, (letzter Zugriff am 7.3.2018)} 
 
 \begin{lstlisting}[style=java,caption=Codebeispiel]
 package u04t;
@@ -102,3 +102,7 @@ Tabelle \ref{Tabellenbeispiel} ist mit einem Onlinegenerator erzeugt, da Tabelle
 \caption{Tabellenbeispiel}
 \label{Tabellenbeispiel}
 \end{table}
+
+\section{Akronyme}
+\label{sec:akronyme}
+Akronyme können mit dem \textbackslash{}ac\{\} Kommando angezeigt werden. Bei diesem Befehl wird eine Abkürzung beim 1. Aufruf so angezeigt: \ac{uC} und danach nur mehr das Kürzel \ac{uC}. Das \ac{WWW} ist unkontrollierbar. Möchte man das Kürzel ausschreiben, verwendet man \textbackslash{}acl\{\}: \acl{WWW}
