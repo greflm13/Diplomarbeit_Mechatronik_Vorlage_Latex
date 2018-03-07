@@ -1,0 +1,95 @@
+\chapter{Beispiele}
+\section{Beispiel mit Code und Bildern}
+\subsection{Code und Bilder}
+\subsubsection{Sogar mit Textumfluss}
+\paragraph{Bilder}
+
+\begin{wrapfigure}{r}{0.7\textwidth}
+\vspace{-30pt}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{logoMecha}
+  \end{center}
+  \caption{Bild mit Textumfluss}
+  \label{Bild mit Textumfluss}
+  \vspace{-10pt}
+\end{wrapfigure}
+
+Hier muss Text stehen, sonst wird von unten alles verschoben. Sollte nicht genug Text vorhanden sein muss mit dem vspace Befehl das Format angepasst werden. Mit dem vspace Kommando muss solange herumgspielt werden, bis das Format passt. Sollte nicht genug Platz gebraucht werden wird der wrapfigure Befehl auch weiter unten alles auf die halbe Seite verringen. Verweisen auf die Bilder \ref{Bild mit Textumfluss} und \ref{Bild über ganze Seitenbreite} kann man mit dem Befehl \textbackslash{}ref\{\}
+
+\begin{figure}[H]
+      \includegraphics[width=1\textwidth]{logoMecha}
+      \caption{Bild über ganze Seitenbreite}
+      \label{Bild über ganze Seitenbreite}
+\end{figure}
+\newpage
+
+\paragraph{Code} Hier muss Text stehen, sonst wird der Paragraph nicht angezeigt.
+
+\begin{lstlisting}[style=java,caption=Codebeispiel]
+package u04t;
+
+import ue04.Bauteil;
+import ue04.Kondensator;
+import ue04.Placeable;
+import ue04.PlaceableWiderstand;
+import ue04.Spule;
+import ue04.Widerstand;
+
+
+/**
+ *
+ * @author sx
+ */
+public class Ue04
+{
+  public static void main (String[] args)
+  {
+    Widerstand r1 = new Widerstand(1000, 10);
+    Kondensator c1 = new Kondensator(0.001, 1, r1.getCurrent());
+    Spule l1 = new Spule (0.01, 5.4, c1.getCurrent());
+    
+    Bauteil [] bauteile = new Bauteil [4];
+    bauteile[0] = r1;
+    bauteile[1] = c1;
+    bauteile[2] = l1;
+    bauteile[3] = new PlaceableWiderstand(100, 2, 10, 12.3);
+    
+    double totalEnergy = 0.0;
+    for (Bauteil b : bauteile)
+    {
+      System.out.print(b);
+      if (b instanceof Placeable)
+      {
+        Placeable p = (Placeable)b;
+        System.out.print(" x=" + p.getX() + "  y=" + p.getY());
+      }
+      System.out.println();
+      
+      totalEnergy += b.getEnergy();
+    }
+    System.out.println("Gesamtenergie: " + totalEnergy + "J");
+    
+  }
+}
+
+\end{lstlisting}
+\newpage
+
+\section{Tabellenbeispiel}
+
+Tabelle \ref{Tabellenbeispiel} ist mit einem Onlinegenerator erzeugt, da Tabellen anstrengend sind.
+
+\begin{table}[]
+\resizebox{0.5\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textit{\textbf{1}} & \textit{\textbf{2}}  & \textit{\textbf{3}}  & \textit{\textbf{4}}  & \textit{\textbf{5}}  \\ \hline
+\textit{\textbf{2}} & \textit{\textbf{4}}  & \textit{\textbf{6}}  & \textit{\textbf{8}}  & \textit{\textbf{10}} \\ \hline
+\textit{\textbf{3}} & \textit{\textbf{6}}  & \textit{\textbf{9}}  & \textit{\textbf{12}} & \textit{\textbf{15}} \\ \hline
+\textit{\textbf{4}} & \textit{\textbf{8}}  & \textit{\textbf{12}} & \textit{\textbf{16}} & \textit{\textbf{20}} \\ \hline
+\textit{\textbf{5}} & \textit{\textbf{10}} & \textit{\textbf{15}} & \textit{\textbf{20}} & \textit{\textbf{25}} \\ \hline
+\end{tabular}%
+}
+\caption{Tabellenbeispiel}
+\label{Tabellenbeispiel}
+\end{table}
