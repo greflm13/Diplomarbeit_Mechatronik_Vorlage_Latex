@@ -43,6 +43,7 @@ import ue04.PlaceableWiderstand;
 import ue04.Spule;
 import ue04.Widerstand;
 
+// Kommentar mit Umlauten: ä, ö, ü, Ä, Ü, Ö, ß
 
 /**
  *
@@ -106,3 +107,39 @@ Tabelle \ref{Tabellenbeispiel} ist mit einem Onlinegenerator erzeugt, da Tabelle
 \section{Akronyme}
 \label{sec:akronyme}
 Akronyme können mit dem \textbackslash{}ac\{\} Kommando angezeigt werden. Bei diesem Befehl wird eine Abkürzung beim 1. Aufruf so angezeigt: \ac{uC} und danach nur mehr das Kürzel \ac{uC}. Das \ac{WWW} ist unkontrollierbar. Möchte man das Kürzel ausschreiben, verwendet man \textbackslash{}acl\{\}: \acl{WWW}
+
+\section{C Beispiel}
+\label{sec:c-beispiel}
+
+\begin{lstlisting}[style=C,caption=C Codebeispiel]
+#include <stdio.h>
+
+int main()
+{
+    double feld[8] = { 2.3, 4.5, 3.9, 6.9, -3.1, 7.2, 6.9, 8.9 };
+    int i, j;
+    
+    for (i = 0; i < (8 - 2); i++) //6 Durchläufe bei 8 Elementen!!
+    {  
+        for (j = 0; j < (8 - 1); j++)
+        {
+            if (feld[j] > feld[j + 1])  //7 bei 8 Elementen!!
+            {
+                double temp = feld[j];
+                feld[j] = feld [j + 1];
+                feld[j+1] = temp;
+            }
+        }
+    }
+    
+    for (i = 0; i < (sizeof feld / sizeof(double)); i++)
+    {
+        printf("Wert %d: %.2lf\n", (i + 1), feld[i]);
+    }
+    printf("\n");
+    
+    return 0;
+}
+
+\end{lstlisting}
+\newpage
