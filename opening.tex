@@ -5,39 +5,24 @@
 \rehead{}
 \ohead[\pagemark]{\pagemark}
 
-\newcommand{\doublesignature}[1]{%
+\newcommand{\doublesignature}[2]{%
   \parbox{\textwidth}{
     \hfill
     \parbox{7cm}{
       \centering
       \rule{6cm}{1pt}\\
-      Florian Greistorfer
+      #1
     }
     \parbox{7cm}{
       \centering
       \rule{6cm}{1pt}\\
-      Marian Korošec
+      #2
     }
   }
-}
-\newcommand{\doublesign}[1]{%
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
-  \parbox{\textwidth}{
-    \hfill
-    \parbox{7cm}{
-      \centering
-      \rule{6cm}{1pt}\\
-      1 nicer Dude
-    }
-    \parbox{7cm}{
-      \centering
-      \rule{6cm}{1pt}\\
-      1 anderer nicer Dude
-    }
-  }
+  \mbox{}\\
+  \mbox{}\\
+  \mbox{}\\
+  \mbox{}\\
 }
 
 \vspace*{20pt}
@@ -52,8 +37,8 @@ Arnfels, am 5. April 2018\\
 
 \vskip 1cm
 
-\doublesignature{}
-\doublesign{}
+\doublesignature{Florian Greistorfer}{Marian Korošec}
+\doublesignature{Thomas Test}{Peter Platzhalter}
 
 \vskip 5cm
 
@@ -67,6 +52,9 @@ Arnfels, am 5. April 2018\\
 
 \section*{Danksagung}
 \label{sec:danksagung}
+An dieser Stelle möchten wir uns bei allen bedanken, die uns im Rahmen der Diplomarbeit unterstützt und betreut haben.\\
+\\
+TODO
 
 \clearpage
 
@@ -78,8 +66,10 @@ Arnfels, am 5. April 2018\\
 
 \section*{Abstract}
 \label{sec:abstract}
+TODO
 
 \section*{Zusammenfassung}
+TODO
 
 \clearpage
 
@@ -95,7 +85,7 @@ Aus Gründen der besseren Lesbarkeit wird in dieser Arbeit die Sprachform des ge
 
 \subsection*{Über dieses Dokument}
 \label{sec:ueber-dokument}
-Diese Arbeit wurde in \LaTeX{} verfasst. Diese Art der Dokumentation bietet gegenüber den normalen Textverarbeitungen gewisse Vorteile hinsichtlich der Formatierung und des Einbindens von Grafiken. Auch Formeln können sehr einfach und effizient angegegeben werden.
+Diese Arbeit wurde in \LaTeX{} verfasst. Diese Art der Dokumentation bietet gegenüber den normalen Textverarbeitungen gewisse Vorteile hinsichtlich der Formatierung und des Einbindens von Grafiken. Auch Formeln können sehr einfach und effizient angegegeben werden. Die Rohfassung des Dokuments befindet sich auf dem Arnfelser Gitweb Server der HTBLA Kaindorf Abteilung Mechatronik.
 
 \clearpage
 
@@ -109,18 +99,15 @@ Diese Arbeit wurde in \LaTeX{} verfasst. Diese Art der Dokumentation bietet gege
 \label{sec:projektteam}
 
 \subsection*{Florian Greistorfer}
-\begin{wrapfigure}[12]{l}{0.5\textwidth}
+\begin{wrapfigure}[10]{l}{0.5\textwidth}
 \begin{center}
   \includegraphics[width=0.35\textwidth]{logoMecha}
 \end{center}
 \end{wrapfigure}
 \mbox{}\\
 \mbox{}\\
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
 \textbf{Aufgabenbereich}:\\
-Latex\\
+\LaTeX{}\\
 \textbf{Betreuer}:\\
 Marian Korošec
 \mbox{}\\
@@ -131,19 +118,15 @@ Marian Korošec
 \mbox{}\\
 
 \subsection*{Marian Korošec}
-\begin{wrapfigure}[15]{l}{0.5\textwidth}
+\begin{wrapfigure}[10]{l}{0.5\textwidth}
 \begin{center}
   \includegraphics[width=0.35\textwidth]{LogoMecha}
 \end{center}
 \end{wrapfigure}
 \mbox{}\\
 \mbox{}\\
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
 \textbf{Aufgabenbereich}:\\
-Latex\\
+\LaTeX{}\\
 \textbf{Betreuer}:\\
 Florian Greistorfer
 \mbox{}\\
@@ -153,41 +136,40 @@ Florian Greistorfer
 \mbox{}\\
 \newpage
 
-\subsection*{1 nicer Dude}
-\begin{wrapfigure}[12]{l}{0.5\textwidth}
+\subsection*{Thomas Test}
+\begin{wrapfigure}[10]{l}{0.5\textwidth}
 \begin{center}
   \includegraphics[width=0.35\textwidth]{logoMecha}
 \end{center}
 \end{wrapfigure}
 \mbox{}\\
 \mbox{}\\
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
 \textbf{Aufgabenbereich}:\\
-Exisitieren\\
+Testen\\
 \textbf{Betreuer}:\\
-Ich
+Professor Oak
+\mbox{}\\
 \mbox{}\\
 \mbox{}\\
 \mbox{}\\
 \mbox{}\\
 \mbox{}\\
 
-\subsection*{1 anderer nicer Dude}
-\begin{wrapfigure}[15]{l}{0.5\textwidth}
+\subsection*{Peter Platzhalter}
+\begin{wrapfigure}[10]{l}{0.5\textwidth}
 \begin{center}
-  \includegraphics[width=0.35\textwidth]{logoMecha}
+  \includegraphics[width=0.35\textwidth]{LogoMecha}
 \end{center}
 \end{wrapfigure}
 \mbox{}\\
 \mbox{}\\
-\mbox{}\\
-\mbox{}\\
-\mbox{}\\
 \textbf{Aufgabenbereich}:\\
-nichjt existieren\\
-Mechianik\\
+Platz halten\\
 \textbf{Betreuer}:\\
-Du
+Professor Oak
+\mbox{}\\
+\mbox{}\\
+\mbox{}\\
+\mbox{}\\
+\mbox{}\\
+\newpage

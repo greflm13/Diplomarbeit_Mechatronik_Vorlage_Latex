@@ -1,20 +1,27 @@
 \chapter{Beispiele}
-\section{Beispiel mit Code und Bildern}
-\subsection{Code und Bilder}
-\subsubsection{Sogar mit Textumfluss}
-\paragraph{Bilder}
 
-\begin{wrapfigure}{r}{0.7\textwidth}
+\section{Beispiel mit Code und Bildern}
+\label{sec:beispiel}
+
+\subsection{Code und Bilder}
+\label{sec:code-bild}
+
+\subsubsection{Sogar mit Textumfluss}
+\label{sec:floating-text}
+
+\paragraph{Bilder}\mbox{}\\
+
+\begin{wrapfigure}{r}{0.6\textwidth}
 \vspace{-30pt}
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{logoMecha}
+    \includegraphics[width=0.55\textwidth]{logoMecha}
   \end{center}
   \caption{Bild mit Textumfluss}
   \label{Bild mit Textumfluss}
   \vspace{-10pt}
 \end{wrapfigure}
 
-Hier muss Text stehen, sonst wird von unten alles verschoben. Sollte nicht genug Text vorhanden sein muss mit dem vspace Befehl das Format angepasst werden. Mit dem vspace Kommando muss solange herumgspielt werden, bis das Format passt. Sollte nicht genug Platz gebraucht werden wird der wrapfigure Befehl auch weiter unten alles auf die halbe Seite verringen. Verweisen auf die Bilder \ref{Bild mit Textumfluss} und \ref{Bild über ganze Seitenbreite} kann man mit dem Befehl \textbackslash{}ref\{\}
+Hier muss Text stehen, sonst wird von unten alles verschoben. Sollte nicht genug Text vorhanden sein muss mit dem \textbackslash{}vspace\{\} Befehl das Format angepasst werden. Mit dem \textbackslash{}vspace\{\} Kommando muss solange herumgspielt werden, bis das Format passt. Sollte nicht genug Platz gebraucht werden, wird der \textbackslash{}wrapfigure\{\} Befehl auch weiter unten alles auf die halbe Seite verringern. Verweisen auf Sections, Bilder, etc. kann mam mit\ref{Bild mit Textumfluss} und \ref{Bild über ganze Seitenbreite} kann man mit dem Befehl \textbackslash{}ref\{\}. Hier ein Verweis auf die Tabellensection \ref{sec:tabelle}.
 
 \begin{figure}[H]
       \includegraphics[width=1\textwidth]{logoMecha}
@@ -23,7 +30,8 @@ Hier muss Text stehen, sonst wird von unten alles verschoben. Sollte nicht genug
 \end{figure}
 \newpage
 
-\paragraph{Code} Hier muss Text stehen, sonst wird der Paragraph nicht angezeigt.
+\paragraph{Code}\mbox{}\\
+Hier muss Text stehen, sonst wird der Paragraph nicht angezeigt.
 
 \begin{lstlisting}[style=java,caption=Codebeispiel]
 package u04t;
@@ -76,10 +84,11 @@ public class Ue04
 \newpage
 
 \section{Tabellenbeispiel}
+\label{sec:tabelle}
 
 Tabelle \ref{Tabellenbeispiel} ist mit einem Onlinegenerator erzeugt, da Tabellen anstrengend sind.
 
-\begin{table}[]
+\begin{table}[H]
 \resizebox{0.5\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|}
 \hline
