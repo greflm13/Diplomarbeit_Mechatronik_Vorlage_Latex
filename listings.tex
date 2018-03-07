@@ -6,7 +6,7 @@
 \definecolor{java_net_preprocessor}{rgb}{0,0.597,0}
 \definecolor{codeBackGray}{gray}{0.98}
 
-\lstdefinestyle{java}{ 																					%define java style
+\lstdefinestyle{java}{ 																					% define java style
   language=Java,                 																		% the language of the code
   backgroundcolor=\color{codeBackGray},   																% choose the background color
   basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,    			% the size of the fonts that are used for the code
@@ -17,7 +17,7 @@
   escapeinside={(}{)},          																		% if you want to add LaTeX within your code
   extendedchars=true,             		 																% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
   frame=none,%single,	                   																% adds a frame around the code
-  framexleftmargin=8mm,																					%include numbers into the frame
+  framexleftmargin=8mm,																					% include numbers into the frame
   keepspaces=true,                																		% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
   keywordstyle=\color{java_net_keyword},       															% keyword style
   deletekeywords=          																				% if you want to delete keywords from the given language
@@ -34,6 +34,7 @@
   stringstyle=\color{java_net_string},     																% string literal style
   tabsize=2,	                   																		% sets default tabsize to 2 spaces
   title=\lstname,                  		 																% show the filename of files included with
+  literate={ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1 {ß}{{\ss}}1,  											% escape äöüß
 }
 
 \newcommand{\inlinecode}[2]{\colorbox{editorGray}{\lstinline[language=#1]$#2$}}
