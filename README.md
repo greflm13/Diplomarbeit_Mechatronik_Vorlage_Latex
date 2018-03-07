@@ -1,4 +1,4 @@
-# Diplomarbeit_Mechatronik_Vorlage_Latex
+# Diplomarbeit Mechatronik Vorlage LaTeX
 
 ## Installation
 
