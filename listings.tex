@@ -21,10 +21,12 @@
 \lstdefinestyle{java}{ 																					% define java style
   language=Java,                 																		% the language of the code
   backgroundcolor=\color{codeBackGray},   																% choose the background color
-  basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,				% the size and the font that are used for the code
+  basicstyle=\fontencoding{T1}\fontfamily{DejaVuSansMono-TLF}\fontseries{m}\selectfont\footnotesize,				% the size and the font that are used for the code
   breakatwhitespace=false,         																		% sets if automatic breaks should only happen at whitespace
   breaklines=true,                 																		% sets automatic line breaking
   captionpos=b,                    																		% sets the caption-position to bottom
+  xleftmargin={0.75cm},
+    % align code with text
   commentstyle=\color{java_net_comment},    															% comment style
   escapeinside={(}{)},          																		% if you want to add LaTeX within your code
   extendedchars=true,             		 																% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
@@ -68,10 +70,12 @@
 \lstdefinestyle{C}{ %define c style
   language=C,                 			% the language of the code
   backgroundcolor=\color{codeBackGray},   	% choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-  basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,        		% the size of the fonts that are used for the code
+  basicstyle=\fontencoding{T1}\fontfamily{DejaVuSansMono-TLF}\fontseries{m}\selectfont\footnotesize,        		% the size of the fonts that are used for the code
   breakatwhitespace=false,         		% sets if automatic breaks should only happen at whitespace
   breaklines=true,                 			% sets automatic line breaking
   captionpos=b,                    			% sets the caption-position to bottom
+    xleftmargin={0.75cm},
+    % align code with text
   commentstyle=\color{C_net_comment},    	% comment style
   escapeinside={(*}{*)},          			% if you want to add LaTeX within your code
   extendedchars=true,             		 	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
