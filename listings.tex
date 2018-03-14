@@ -4,7 +4,7 @@
 	backgroundcolor=\color{codeBackGray},
     showstringspaces=false,
 	keepspaces=true,
-    basicstyle=\fontencoding{T1}\fontfamily{DejaVuSansMono-TLF}\fontseries{m}\selectfont\footnotesize,
+    basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,
     keywordstyle=\color{blue},
     commentstyle=\color[grey]{0.6},
     stringstyle=\color[RGB]{255,150,75}
@@ -21,7 +21,7 @@
 \lstdefinestyle{java}{ 																					% define java style
   language=Java,                 																		% the language of the code
   backgroundcolor=\color{codeBackGray},   																% choose the background color
-  basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,    			% the size of the fonts that are used for the code
+  basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,				% the size and the font that are used for the code
   breakatwhitespace=false,         																		% sets if automatic breaks should only happen at whitespace
   breaklines=true,                 																		% sets automatic line breaking
   captionpos=b,                    																		% sets the caption-position to bottom
@@ -68,7 +68,7 @@
 \lstdefinestyle{C}{ %define c style
   language=C,                 			% the language of the code
   backgroundcolor=\color{codeBackGray},   	% choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-  basicstyle=\fontencoding{T1}\fontfamily{DejaVuSansMono-TLF}\fontseries{m}\selectfont\footnotesize,        		% the size of the fonts that are used for the code
+  basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,        		% the size of the fonts that are used for the code
   breakatwhitespace=false,         		% sets if automatic breaks should only happen at whitespace
   breaklines=true,                 			% sets automatic line breaking
   captionpos=b,                    			% sets the caption-position to bottom
@@ -84,7 +84,7 @@
   otherkeywords={*,...},           		% if you want to add more keywords to the set
   numbers=left,                    			% where to put the line-numbers; possible values are (none, left, right)
   numbersep=8pt,                   			% how far the line-numbers are from the code
-  numberstyle=\fontencoding{T1}\fontfamily{DejaVuSansMono-TLF}\fontseries{m}\selectfont\footnotesize,		 % the style that is used for the line-numbers
+  numberstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,		 % the style that is used for the line-numbers
   rulecolor=\color{black},         		% if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
   showspaces=false,                			% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
   showstringspaces=false,          		% underline spaces within strings only
@@ -106,4 +106,4 @@
   {ö}{{\"o}}1																							% escape ÖÄÜßüäö
 }
 
-\newcommand{\inlinecode}[2]{\colorbox{editorGray}{\lstinline[language=#1]$#2$}}
+\newcommand{\inlinecode}[2]{\colorbox{editorGray}{\lstinline[style=#1]$#2$}}
