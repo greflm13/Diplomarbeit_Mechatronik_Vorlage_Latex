@@ -63,7 +63,8 @@ Setup:
 
 Zietieren mit `\cite{buchname}` oder als Fußnote: `\footfullcite{buchname}`
 
-Bücher einfügen in der Datei _Literaturverzeichnis.bib_ (Buchtypen: https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management)
+Bücher einfügen in der Datei _Literaturverzeichnis.bib_ (Buchtypen: https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management)  
+GUI Methode: JabRef installieren und damit _Literaturverzeichnis.bib_ öffnen. Genaueres dazu in der [Dokumentation](https://help.jabref.org/).
 
 ### Akronyme
 
