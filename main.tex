@@ -25,31 +25,37 @@ bibliography=totocnumbered,											%Literaturverzeichnis
 \renewcommand*{\chapterpagestyle}{scrheadings}						%Kopf und Fußzeile auf Seiten mit Überschriften anders
 
 %Dokumenteinstellungen und Paketimporte
-\usepackage[ngerman]{babel}											%Deutsch
-\usepackage{graphicx}												%Bilder
-\usepackage{caption}												%Tabellen Listings und Figuren mit Beschriftung in Verzeichnissen
 \usepackage[T1]{fontenc}											%Outputencoding
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}											%UTF8 + Sonderzeichen
+\usepackage[ngerman]{babel}											%Deutsch
+\usepackage{newtxtext,newtxmath}					%font new TX (standard text)
+\renewcommand{\headfont}{\rmfamily}					%use new tx for headers
+\setkomafont{sectioning}{\rmfamily\bfseries}		%use new tx for chapters, sections, etc
+\usepackage{caption}												%Tabellen Listings und Figuren mit Beschriftung in Verzeichnissen
+\usepackage{graphicx}												%Bilder
 \usepackage{float}													%Plazierung von Floats (Bilder Tabellen)
-\usepackage[utf8x]{inputenc}										%UTF8 + Sonderzeichen
 \usepackage{wrapfig}												%Textumfluss von Bildern, die nicht die ganze Seite brauchen
 \usepackage{setspace}												%Zeilenabstand
 \usepackage{listings}												%Listings (=Code)
-\usepackage{DejaVuSerif}											%DejaVu Sans Mono (listings)
+\usepackage{courier}												%Courier (listings)
 \usepackage{times}													%Schriftart Times Roman
 \usepackage{courier}												%Schriftart Courier
-\usepackage{multirow}												%Bessere Tabellenformatierung
-\usepackage{array}													%Bessere Tabellenformatierung
+\usepackage{array,multirow}												%Bessere Tabellenformatierung
 \usepackage{xcolor}													%Farben für Codehighlighting oder ähnliches
-\usepackage{appendix}												%Anhang Titelseite
 \usepackage{tabularx}												%Bessere Tabellen
-\usepackage{jurabib}												%Zitierung
+\usepackage{appendix}												%Anhang Titelseite
 \usepackage[printonlyused,withpage]{acronym}						%Für die Verwendung von Akronymen + Verzeichnis - printonlyused: Abkürzung nur im Verzeichnis wenn auch benutzt; withpage: Seite der 1. Verwendung im Verzeichnis anzeigen
 
 \setlength{\parindent}{0em}											%Einrücken
 \setcounter{tocdepth}{5}											%Tiefe der Überschriften
 \setcounter{secnumdepth}{5}											%Nummerierungstiefe der Überschriften
 
+\input{listings}													%Datei importieren
+\input{biber}
+
 \usepackage[bookmarks]{hyperref}									%Automatische Lesezeichen
+\usepackage[figure]{hypcap} 										%Bild referenzieren
 
 \subject{\includegraphics[scale=0.7]{fig/logoMecha}}
 \title{Diplomarbeitvorlage}
@@ -62,7 +68,6 @@ Ausbildungsschwerpunkt Mechatronik und Automatisierungstechnik}
 \begin{document}													%Dokumentbeginn
 \onehalfspace														%Zeilenabstand
 \maketitle															%Titelseite
-\input{listings}													%Datei importieren
 \input{opening}														%Datei importieren
 \tableofcontents													%Inhaltsverzeichnis
 \mainmatter															%Seitennummerierung

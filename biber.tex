@@ -1,0 +1,39 @@
+\usepackage[autostyle]{csquotes}
+\usepackage[
+	backend=biber,
+	style=authoryear,
+	sortlocale=de_DE,
+]{biblatex}
+\addbibresource{Literaturverzeichnis.bib}
+\DeclareNameAlias{sortname}{first-last}
+
+\DeclareFieldFormat{url}{\newline\url{#1}}
+\newbibmacro*{url+urldate}{%
+ \printfield[url]{url}%   
+ \iffieldundef{urlyear}     
+ {}     
+ {\setunit*{\addspace}%      
+ \printtext{\printurldate}}}
+
+\DeclareLabeldate{%
+  \field{date}
+  \field{eventdate}
+  \field{origdate}
+}
+
+\renewbibmacro*{date+extradate}{%
+  \ifboolexpr{test {\iffieldundef{labelyear}}
+    or (test {\iffieldequalstr{labelyear}{nodate}}
+        and test {\ifentrytype{online}})}
+    {}
+    {\printtext[parens]{%
+       \iflabeldateisdate
+         {\printdateextra}
+         {\printlabeldateextra}}}}
+
+\renewbibmacro*{cite:labeldate+extradate}{%
+  \ifboolexpr{test {\iffieldundef{labelyear}}
+    or (test {\iffieldequalstr{labelyear}{nodate}}
+        and test {\ifentrytype{online}})}
+    {}
+    {\printtext[bibhyperref]{\printlabeldateextra}}}
