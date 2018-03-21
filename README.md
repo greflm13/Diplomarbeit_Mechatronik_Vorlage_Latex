@@ -94,7 +94,7 @@ Mögliche Optionen:
 Wenn style oder language angegeben ist, muss das andere nicht angegeben werden. Reihenfolge der Optionen ist egal.
 
 ```tex
-\begin{lstlisting}[style=java,caption=Java Codebeispiel,label=cCode]
+\begin{lstlisting}[style=java,caption=Java Codebeispiel,label=C Code]
   ...
 \end{lstlisting}
 ```
