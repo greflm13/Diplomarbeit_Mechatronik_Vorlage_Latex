@@ -95,7 +95,7 @@ Mögliche Optionen:
 Wenn style oder language angegeben ist, muss das andere nicht angegeben werden. Reihenfolge der Optionen ist egal.
 
 ```tex
-\begin{lstlisting}[style=java,caption=Java Codebeispiel,label=cCode]
+\begin{lstlisting}[style=java,caption=Java Codebeispiel,label=C Code]
   ...
 \end{lstlisting}
 ```
@@ -148,7 +148,7 @@ Es gibt zwei Arten, wie man Bilder einfügt. Entweder über die ganze Seite, ode
 \begin{figure}[H]
   \includegraphics[width=1\textwidth]{Dateiname_Ohne_Endung}
   \caption{Name des Bildes}
-  \label{Verweis}
+  \label{fig:verweis}
 \end{figure}
 ```
 
@@ -163,7 +163,7 @@ In den eckigen Klammern in der ersten Zeile kann man LaTeX mitteilen, wo man sei
     \includegraphics[width=0.55\textwidth]{Dateiname_Ohne_Endung}
   \end{center}
   \caption{Name des Bildes}
-  \label{Verweis}
+  \label{fig:verweis}
   \vspace{-10pt}
 \end{wrapfigure}
 ```
