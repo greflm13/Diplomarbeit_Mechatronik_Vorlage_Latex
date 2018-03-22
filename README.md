@@ -100,7 +100,7 @@ Wenn style oder language angegeben ist, muss das andere nicht angegeben werden. 
 \end{lstlisting}
 ```
 
-Styles werden definiert in _listings.tex_. Am besten man fragt [Onkel Google](https://google.com) oder liest in der [Dokumentation](http://users.ecs.soton.ac.uk/srg/softwaretools/document/start/listings.pdf) nach. In lstlisting sind folgende Sprachen bereits vordefiniert:
+Styles werden definiert in _listings.tex_. Am besten man fragt [Onkel Google](https://www.google.com) oder liest in der [Dokumentation](http://users.ecs.soton.ac.uk/srg/softwaretools/document/start/listings.pdf) nach. In lstlisting sind folgende Sprachen bereits vordefiniert:
 
 + C
 + C++

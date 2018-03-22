@@ -1,62 +1,62 @@
 \documentclass
 [
-a4paper,															%Papierformat
-12pt,																%Schriftgröße
-twoside=true,														%Zweiseitig
-openright,															%Neues Kapitel immer auf der rechten Seite
-titlepage,															%Titelseite
-headinclude,														%Seitengröße auch bei Kopfzeile
-numbers=noenddot,													%Bei Kapiteln keine abschließenden Punkte
-listof=numbered,													%Listingsverzeichnis
-bibliography=totocnumbered,											%Literaturverzeichnis
+a4paper,															% Papierformat
+12pt,																% Schriftgröße
+twoside=true,														% Zweiseitig
+openright,															% Neues Kapitel immer auf der rechten Seite
+titlepage,															% Titelseite
+headinclude,														% Seitengröße auch bei Kopfzeile
+numbers=noenddot,													% Bei Kapiteln keine abschließenden Punkte
+listof=numbered,													% Listingsverzeichnis
+bibliography=totocnumbered,											% Literaturverzeichnis
 ]
-{scrbook}															%Dokumenttyp
+{scrbook}															% Dokumenttyp
 
-\usepackage[bottom=1in,inner=1in,outer=20mm,top=20mm]{geometry}		%Ganze Seite verwenden
+\usepackage[bottom=1in,inner=1in,outer=20mm,top=20mm]{geometry}		% Ganze Seite verwenden
 
 % Kopf und Fußzeile
-\usepackage{emptypage}												%Leere Seiten ohne Kopf und Fußzeile
-\usepackage[headsepline]{scrlayer-scrpage}							%Kopf und Fußzeile
-\pagestyle{scrheadings}												%Nummerierung in der Kopfzeile
-\clearscrheadfoot													%Kopf und Fußzeile löschen
-\rehead{\headmark}													%Kapitelname auf der geraden Seite innen
-\ohead[\pagemark]{\pagemark}										%Seitennummerierung
-\lohead{}															%Name auf der ungeraden Seite innen
-\renewcommand*{\chapterpagestyle}{scrheadings}						%Kopf und Fußzeile auf Seiten mit Überschriften anders
+\usepackage{emptypage}												% Leere Seiten ohne Kopf und Fußzeile
+\usepackage[headsepline]{scrlayer-scrpage}							% Kopf und Fußzeile
+\pagestyle{scrheadings}												% Nummerierung in der Kopfzeile
+\clearscrheadfoot													% Kopf und Fußzeile löschen
+\rehead{\headmark}													% Kapitelname auf der geraden Seite innen
+\ohead[\pagemark]{\pagemark}										% Seitennummerierung
+\lohead{}															% Name auf der ungeraden Seite innen
+\renewcommand*{\chapterpagestyle}{scrheadings}						% Kopf und Fußzeile auf Seiten mit Überschriften anders
 
-%Dokumenteinstellungen und Paketimporte
-\usepackage[T1]{fontenc}											%Outputencoding
+% Dokumenteinstellungen und Paketimporte
+\usepackage[T1]{fontenc}											% Outputencoding
 \usepackage{lmodern}
-\usepackage[utf8]{inputenc}											%UTF8 + Sonderzeichen
-\usepackage[ngerman]{babel}											%Deutsch
-\usepackage{newtxtext,newtxmath}									%font new TX (standard text)
-\renewcommand{\headfont}{\rmfamily}									%use new tx for headers
-\setkomafont{sectioning}{\rmfamily\bfseries}						%use new tx for chapters, sections, etc
-\usepackage{caption}												%Tabellen Listings und Figuren mit Beschriftung in Verzeichnissen
-\usepackage{graphicx}												%Bilder
-\usepackage{float}													%Plazierung von Floats (Bilder Tabellen)
-\usepackage{wrapfig}												%Textumfluss von Bildern, die nicht die ganze Seite brauchen
-\usepackage{setspace}												%Zeilenabstand
-\usepackage{listings}												%Listings (=Code)
-\usepackage{courier}												%Courier (listings)
-\usepackage{times}													%Schriftart Times Roman
-\usepackage{courier}												%Schriftart Courier
-\usepackage{array,multirow}											%Bessere Tabellenformatierung
-\usepackage{xcolor}													%Farben für Codehighlighting oder ähnliches
-\usepackage{tabularx}												%Bessere Tabellen
-\usepackage{appendix}												%Anhang Titelseite
-\usepackage[hyphens]{url}
-\usepackage[printonlyused,withpage]{acronym}						%Für die Verwendung von Akronymen + Verzeichnis - printonlyused: Abkürzung nur im Verzeichnis wenn auch benutzt; withpage: Seite der 1. Verwendung im Verzeichnis anzeigen
+\usepackage[utf8]{inputenc}											% UTF8 + Sonderzeichen
+\usepackage[ngerman]{babel}											% Deutsch
+\usepackage{newtxtext,newtxmath}									% font new TX (standard text)
+\renewcommand{\headfont}{\rmfamily}									% use new tx for headers
+\setkomafont{sectioning}{\rmfamily\bfseries}						% use new tx for chapters, sections, etc
+\usepackage{caption}												% Tabellen Listings und Figuren mit Beschriftung in Verzeichnissen
+\usepackage{graphicx}												% Bilder
+\usepackage{float}													% Plazierung von Floats (Bilder Tabellen)
+\usepackage{wrapfig}												% Textumfluss von Bildern, die nicht die ganze Seite brauchen
+\usepackage{setspace}												% Zeilenabstand
+\usepackage{listings}												% Listings (=Code)
+\usepackage{courier}												% Courier (listings)
+\usepackage{times}													% Schriftart Times Roman
+\usepackage{courier}												% Schriftart Courier
+\usepackage{array,multirow}											% Bessere Tabellenformatierung
+\usepackage{xcolor}													% Farben für Codehighlighting oder ähnliches
+\usepackage{tabularx}												% Bessere Tabellen
+\usepackage{appendix}												% Anhang Titelseite
+\usepackage[hyphens]{url}											% Zeilenumbruch bei URLs
+\usepackage[printonlyused,withpage]{acronym}						% Für die Verwendung von Akronymen + Verzeichnis - printonlyused: Abkürzung nur im Verzeichnis wenn auch benutzt; withpage: Seite der 1. Verwendung im Verzeichnis anzeigen
 
-\setlength{\parindent}{0em}											%Einrücken
-\setcounter{tocdepth}{5}											%Tiefe der Überschriften
-\setcounter{secnumdepth}{5}											%Nummerierungstiefe der Überschriften
+\setlength{\parindent}{0em}											% Einrücken
+\setcounter{tocdepth}{5}											% Tiefe der Überschriften
+\setcounter{secnumdepth}{5}											% Nummerierungstiefe der Überschriften
 
-\input{listings}													%Datei importieren
+\input{listings}													% Datei importieren
 \input{biber}
 
-\usepackage[bookmarks]{hyperref}									%Automatische Lesezeichen
-\usepackage[figure]{hypcap} 										%Bild referenzieren
+\usepackage[bookmarks]{hyperref}									% Automatische Lesezeichen
+\usepackage[figure]{hypcap} 										% Bild referenzieren
 
 \subject{\includegraphics[scale=0.7]{fig/logoMecha}}
 \title{Diplomarbeitvorlage}
@@ -66,12 +66,12 @@ Ausbildungsschwerpunkt Mechatronik und Automatisierungstechnik}
 \author{Florian Greistorfer \and Marian Korošec}
 \date{Abgabedatum: 7.3.2018}
 \publishers{Betreut von:\\Dipl.-Ing. Manfred Steiner}
-\begin{document}													%Dokumentbeginn
-\onehalfspace														%Zeilenabstand
-\maketitle															%Titelseite
-\input{opening}														%Datei importieren
-\tableofcontents													%Inhaltsverzeichnis
-\mainmatter															%Seitennummerierung
-\include{inhalt}													%Datei importieren
-\include{appendix}													%Datei importieren
+\begin{document}													% Dokumentbeginn
+\onehalfspace														% Zeilenabstand
+\maketitle															% Titelseite
+\input{opening}														% Datei importieren
+\tableofcontents													% Inhaltsverzeichnis
+\mainmatter															% Seitennummerierung
+\include{inhalt}													% Datei importieren
+\include{appendix}													% Datei importieren
 \end{document}
