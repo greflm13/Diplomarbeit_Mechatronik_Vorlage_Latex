@@ -32,9 +32,7 @@ sudo apt install texmaker
 
 + JabRef Installation
 
-```sh
-curl -O https://www.fosshub.com/JabRef.html/JabRef-4.1.jar
-```
+https://www.fosshub.com/JabRef.html/JabRef-4.1.jar
 
 ### Generell
 
