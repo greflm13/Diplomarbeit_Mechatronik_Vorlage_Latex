@@ -4,7 +4,7 @@
 	backgroundcolor=\color{codeBackGray},
     showstringspaces=false,
 	keepspaces=true,
-    basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,
+    basicstyle=\footnotesize\ttfamily,
     keywordstyle=\color{blue},
     commentstyle=\color[grey]{0.6},
     stringstyle=\color[RGB]{255,150,75}
@@ -21,7 +21,7 @@
 \lstdefinestyle{java}{ 																					% define java style
   language=Java,                 																		% the language of the code
   backgroundcolor=\color{codeBackGray},   																% choose the background color
-  basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,	% the size and the font that are used for the code
+  basicstyle=\footnotesize\ttfamily,,																	% the size and the font that are used for the code
   breakatwhitespace=false,         																		% sets if automatic breaks should only happen at whitespace
   breaklines=true,                 																		% sets automatic line breaking
   captionpos=b,                    																		% sets the caption-position to bottom
@@ -38,7 +38,7 @@
   otherkeywords={},           																			% if you want to add more keywords to the set
   numbers=left,                    																		% where to put the line-numbers; possible values are (none, left, right)
   numbersep=8pt,                   																		% how far the line-numbers are from the code
-  numberstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,				% the style that is used for the line-numbers
+  numberstyle=\footnotesize\ttfamily,																	% the style that is used for the line-numbers
   rulecolor=\color{black},         																		% if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
   showspaces=false,                																		% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
   showstringspaces=false,          																		% underline spaces within strings only
@@ -66,36 +66,35 @@
 \definecolor{C_net_preprocessor}{rgb}{0,0.597,0}
 \definecolor{codeBackGray}{gray}{0.98}
 
-\lstdefinestyle{C}{ %define c style
-  language=C,                 			% the language of the code
-  backgroundcolor=\color{codeBackGray},   	% choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-  basicstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,        		% the size of the fonts that are used for the code
-  breakatwhitespace=false,         		% sets if automatic breaks should only happen at whitespace
-  breaklines=true,                 			% sets automatic line breaking
-  captionpos=b,                    			% sets the caption-position to bottom
-    xleftmargin={0.75cm},
-    % align code with text
-  commentstyle=\color{C_net_comment},    	% comment style
-  escapeinside={(*}{*)},          			% if you want to add LaTeX within your code
-  extendedchars=true,             		 	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-  frame=none,%single,	                   				% adds a frame around the code
-  framexleftmargin=8mm,					%include numbers into the frame
-  keepspaces=true,                			% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-  keywordstyle=\color{C_net_keyword},       		% keyword style
-  deletekeywords=          					% if you want to delete keywords from the given language
+\lstdefinestyle{C}{ 																					% define c style
+  language=C,                 																			% the language of the code
+  backgroundcolor=\color{codeBackGray},   																% choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize\ttfamily,													        		% the size of the fonts that are used for the code
+  breakatwhitespace=false,         																		% sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 																		% sets automatic line breaking
+  captionpos=b,                    																		% sets the caption-position to bottom
+  xleftmargin={0.75cm},																					% align code with text
+  commentstyle=\color{C_net_comment},    																% comment style
+  escapeinside={(*}{*)},          																		% if you want to add LaTeX within your code
+  extendedchars=true,             		 																% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=none,%single,	                   																% adds a frame around the code
+  framexleftmargin=8mm,																					% include numbers into the frame
+  keepspaces=true,                																		% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{C_net_keyword},       															% keyword style
+  deletekeywords=          																				% if you want to delete keywords from the given language
  {...}, 
-  otherkeywords={*,...},           		% if you want to add more keywords to the set
-  numbers=left,                    			% where to put the line-numbers; possible values are (none, left, right)
-  numbersep=8pt,                   			% how far the line-numbers are from the code
-  numberstyle=\fontencoding{T1}\fontfamily{courier}\fontseries{m}\selectfont\footnotesize,		 % the style that is used for the line-numbers
-  rulecolor=\color{black},         		% if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                			% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-  showstringspaces=false,          		% underline spaces within strings only
-  showtabs=false,                  			% show tabs within strings adding particular underscores
-  stepnumber=1,                    			% the step between two line-numbers. If it's 1, each line will be numbered
-  stringstyle=\color{C_net_string},     		% string literal style
-  tabsize=2,	                   					% sets default tabsize to 2 spaces
-  title=\lstname,                  		 		% show the filename of files included with
+  otherkeywords={*,...},           																		% if you want to add more keywords to the set
+  numbers=left,                    																		% where to put the line-numbers; possible values are (none, left, right)
+  numbersep=8pt,                   																		% how far the line-numbers are from the code
+  numberstyle=\footnotesize\ttfamily,																	% the style that is used for the line-numbers
+  rulecolor=\color{black},         																		% if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                																		% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          																		% underline spaces within strings only
+  showtabs=false,                  																		% show tabs within strings adding particular underscores
+  stepnumber=1,                    																		% the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{C_net_string},     																% string literal style
+  tabsize=2,	                   																		% sets default tabsize to 2 spaces
+  title=\lstname,                  		 																% show the filename of files included with
   literate=
   {\#include}{{{\color{C_net_preprocessor}\#include}}}{8}
   {\#define}{{{\color{C_net_preprocessor}\#define}}}{7}
