@@ -69,7 +69,7 @@ GUI Methode: JabRef installieren und damit _Literaturverzeichnis.bib_ öffnen. G
 ### Akronyme
 
 Abkürzungsverzeichnis in der _appendix.tex_.
-In der Zone acronym (\begin{acronym}...\begin{acronym}) werden die Abkürzungen definiert.
+In der Zone acronym (\begin{acronym}...\end{acronym}) werden die Abkürzungen definiert.
 
 ```tex
 \begin{acronym}
