@@ -106,7 +106,7 @@ Styles werden definiert in _listings.tex_. Am besten man fragt [Onkel Google](ht
 + XML
 + und viele mehr (siehe [Dokumentation](https://en.m.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Supported_languages))
 
-Alle weiteren Sprachen müssen mit `\definelanguage{}` definiert werden. Dazu entweder die [Dokumentation](http://users.ecs.soton.ac.uk/srg/softwaretools/document/start/listings.pdf) lesen, oder [Onkel Google](https://google.com) fragen.
+Alle weiteren Sprachen müssen mit `\definelanguage{}` definiert werden. Dazu entweder die [Dokumentation](https://ctan.org/tex-archive/macros/latex/contrib/listings/) lesen, oder [Onkel Google](https://google.com) fragen.
 
 ### Aufzählungen
 
