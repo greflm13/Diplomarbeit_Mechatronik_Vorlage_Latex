@@ -166,4 +166,4 @@ Ein Verweis in LaTeX erfolgt immer auf ein `\label{}`. Deswegen ist es wichtig, 
 
 ### Tabellen
 
-[Onlinegenerator](http://lmgtfy.com/?iie=1&q=Latex+Table+Generator)
+[Onlinegenerator](https://duckduckgo.com/?q=latex+table+generator)
